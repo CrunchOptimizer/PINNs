@@ -1,0 +1,46 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 382161
+##  Job Name : Burgers_1D
+##  Nodelist : gpu4001
+##      CPUs : 8
+##  Mem/Node : 65536 MB
+## Directory : /oscar/data/gk/kshukla1/Optmizer_Leg_2/Stokes_NG
+##   Job Started : Sun Feb 15 07:03:36 PM EST 2026
+###############################################################################
+--- STOKES SOLVER (MULTISTAGE RESUMABLE) ---
+Phase 1: 500 iters (N=1000+1000)
+Phase 2: 1000 iters (N=1000+1000)
+Compiling Phase 1 Kernel...
+Compiling Phase 2 Kernel...
+Solver Compiled/Ready.
+
+>>> STARTING TRAINING...
+P1 | Iter  100 | Loss: 3.9437e-02 | Time: 12.9s | Err U: 0.00e+00 | Err V: 0.00e+00 | Err P: 0.00e+00
+P1 | Iter  200 | Loss: 1.4836e-05 | Time: 25.5s | Err U: 0.00e+00 | Err V: 0.00e+00 | Err P: 0.00e+00
+P1 | Iter  300 | Loss: 5.4465e-07 | Time: 38.2s | Err U: 0.00e+00 | Err V: 0.00e+00 | Err P: 0.00e+00
+P1 | Iter  400 | Loss: 2.0504e-08 | Time: 50.8s | Err U: 0.00e+00 | Err V: 0.00e+00 | Err P: 0.00e+00
+P1 | Iter  500 | Loss: 1.1730e-07 | Time: 63.4s | Err U: 0.00e+00 | Err V: 0.00e+00 | Err P: 0.00e+00
+P2 | Iter  600 | Loss: 1.2693e-14 | Time: 76.1s | Err U: 0.00e+00 | Err V: 0.00e+00 | Err P: 0.00e+00
+P2 | Iter  700 | Loss: 1.4664e-10 | Time: 88.7s | Err U: 0.00e+00 | Err V: 0.00e+00 | Err P: 0.00e+00
+P2 | Iter  800 | Loss: 1.0096e-13 | Time: 101.4s | Err U: 0.00e+00 | Err V: 0.00e+00 | Err P: 0.00e+00
+P2 | Iter  900 | Loss: 1.0869e-15 | Time: 114.0s | Err U: 0.00e+00 | Err V: 0.00e+00 | Err P: 0.00e+00
+P2 | Iter 1000 | Loss: 8.7388e-16 | Time: 126.7s | Err U: 0.00e+00 | Err V: 0.00e+00 | Err P: 0.00e+00
+P2 | Iter 1100 | Loss: 3.7523e-13 | Time: 139.3s | Err U: 0.00e+00 | Err V: 0.00e+00 | Err P: 0.00e+00
+P2 | Iter 1200 | Loss: 8.8286e-16 | Time: 151.9s | Err U: 0.00e+00 | Err V: 0.00e+00 | Err P: 0.00e+00
+P2 | Iter 1300 | Loss: 1.5002e-15 | Time: 164.6s | Err U: 0.00e+00 | Err V: 0.00e+00 | Err P: 0.00e+00
+P2 | Iter 1400 | Loss: 1.2339e-15 | Time: 177.2s | Err U: 0.00e+00 | Err V: 0.00e+00 | Err P: 0.00e+00
+P2 | Iter 1500 | Loss: 2.0550e-15 | Time: 189.8s | Err U: 0.00e+00 | Err V: 0.00e+00 | Err P: 0.00e+00
+
+   --- Vortex Strength (Centerline x=0.5) at Iter 1500 ---
+   y          | |Velocity|           (NO REFERENCE FOUND)
+   0.01       | 2.93742e-08         
+   0.10       | 1.19950e-09         
+   0.50       | 7.51243e-06         
+   1.00       | 2.83717e-03         
+   1.50       | 1.50351e-01         
+   1.80       | 3.15815e-02         
+   --------------------------------------------------
+
+   >>> Plot saved to ./diagnostics_01500.png
+Training history saved to training_history.pkl
+Plot saved to stokes_multistage_result.png
